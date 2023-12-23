@@ -164,4 +164,3 @@ This method allows you to queue changes to be made in the next repaint, reducing
 **Debounce and Throttle:**
 
 For operations tied to events like resize or scroll, use debounce or throttle techniques to limit the number of times these operations are executed.
-# node-and-performance
