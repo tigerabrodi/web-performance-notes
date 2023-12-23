@@ -1,0 +1,6 @@
+#content div {
+  margin: 10px;
+  padding: 10px;
+  background-color: lightgrey;
+  cursor: pointer;
+}
