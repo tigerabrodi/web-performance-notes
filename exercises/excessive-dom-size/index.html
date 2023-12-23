@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Excessive DOM Size Exercise</title>
+    <style>
+      .item {
+        margin: 5px;
+        padding: 5px;
+        background-color: lightgrey;
+      }
+      .container {
+        height: 500px;
+        overflow: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <button id="generateItems">Generate Many Items</button>
+      <div class="container">
+        <!-- A large number of items will be added here -->
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
