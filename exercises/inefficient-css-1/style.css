@@ -1,0 +1,13 @@
+/* Potentially inefficient CSS */
+/* .list-item:hover {
+  background-color: yellow;
+} */
+
+.list-item {
+  transition: opacity 0.3s ease;
+  will-change: opacity;
+}
+
+.list-item:hover {
+  opacity: 0.2;
+}

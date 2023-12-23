@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inefficient CSS Debugging Exercise</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="content">
+      <ul>
+        <!-- Generating 1000 list items for demonstration -->
+        <!-- This can be done through JS to avoid cluttering the HTML -->
+        <script>
+          for (let i = 0; i < 1000; i++) {
+            document.write('<li class="list-item">Item ' + (i + 1) + "</li>");
+          }
+        </script>
+      </ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
