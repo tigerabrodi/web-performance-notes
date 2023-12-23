@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* .box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  transition: width 2s, height 2s, transform 2s;
+} */
+
+/* .box.expand {
+  width: 300px;
+  height: 300px;
+  transform: rotate(180deg);
+} */
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  transition: transform 2s; /* Only animate transform */
+  transform-origin: center; /* Optional, for visual effect */
+}
+
+.box.expand {
+  transform: rotate(180deg) scale(3); /* Use scale for size change */
+}
