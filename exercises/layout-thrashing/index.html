@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout Thrashing Exercise</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        background-color: lightblue;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <!-- Boxes will be added here -->
+    </div>
+    <button id="addBoxes">Add Boxes</button>
+    <script src="script.js"></script>
+  </body>
+</html>
