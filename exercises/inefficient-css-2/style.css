@@ -1,0 +1,21 @@
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.dynamic-content > * {
+  /* Apply transition only to specific properties if needed */
+  transition: background-color 0.3s ease;
+  font-family: "Arial", sans-serif;
+  color: #333;
+}
+
+.dynamic-content > *:nth-child(odd) {
+  background-color: lightblue;
+}
+
+.dynamic-content > *:nth-child(even) {
+  background-color: lightgreen;
+}
