@@ -1,6 +1,6 @@
 # Web Performance Notes
 
-## Common issues
+# Common issues
 
 1. **Unoptimized Images**: Large or unoptimized images can significantly slow down page load times. This is one of the most common issues, as images are a major part of most websites.
 
@@ -22,10 +22,39 @@
 
 10. **Slow Third-Party Scripts**: Dependency on third-party scripts and services (like ads, analytics, or widgets) can significantly impact performance if these scripts are slow or unresponsive.
 
-## Critical Rendering Path
+# Analyzing the performance data
 
-## Layout Reflow
+## Interpreting the flame chart
 
-## Layout Thrashing
+### Understanding the Flame Chart
 
-## Identify long-running and blocking functions
+- **Time Axis**: The horizontal axis represents time.
+- **Call Stack**: Each row in the flame chart represents a function call stack at any point in time.
+- **Bars**: Each bar represents a function call. The width of the bar indicates the time taken by that function.
+
+### Interpreting the Data
+
+- **Wide Bars**: Indicate functions that took a long time to execute. These are your primary targets for optimization.
+- **Tall Stacks**: A tall stack of bars represents a deep call stack, suggesting complex function executions.
+- **Color Coding**: Different colors can represent different types of activities (e.g., scripting, rendering).
+- **Hover for Details**: Hover over bars to see more information about the function, including execution time and resources used.
+
+### Analyze deep call stacks
+
+1. **Identify the Root Cause**: Look at the bottom of the stack to understand what initiated the series of calls.
+2. **Trace the Execution Path**: Follow the stack upwards to see the sequence of function calls and how the execution flows through different layers of your application.
+3. **Look for Anomalies**: Unusually deep or unexpected paths might indicate inefficiencies or bugs, like unintended recursive calls or unnecessary nested functions.
+
+## Identifying long tasks
+
+## Call Tree and Bottom-Up Views
+
+## Tips for effective analysis
+
+# Memory profiling
+
+# Critical Rendering Path
+
+# Layout Reflow
+
+# Layout Thrashing
